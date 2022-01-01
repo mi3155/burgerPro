@@ -35,24 +35,24 @@ public class firstcontroller {
     @GetMapping("/burger") // 메인페이지 ( 로그인 전)
     public String hello(){
 
-        return "/01burger.html";
+        return "01burger.html";
     }
 
     @GetMapping("/loginburger") // 메인페이지( 로그인 후 )
     public String hello2(){
-        return "/02burger.html";
+        return "02burger.html";
     }
 
     @GetMapping("/login") // 로그인 창
     public String hello3(){
 
-        return "/login.html";
+        return "login.html";
     }
 
     @GetMapping("/Signup") // 회원가입 창
     public String hello5(){
 
-        return "/Signup.html";
+        return "Signup.html";
     }
 
     @PostMapping("/SignupProc")
@@ -64,14 +64,14 @@ public class firstcontroller {
 
         System.out.println("id : " + dto.getId() + "님 가입을 환영합니다.");
 
-        return "/login";
+        return "login";
     }
 
     ///////////////////////////////////////////
     //notice
 
     @GetMapping("/post.do")
-    public String PostPage(){ return "/notice/post.html";}
+    public String PostPage(){ return "notice/post.html";}
 
     @PostMapping("/postproc.do")
     public String PostProcPage(noticeDTO dto, Model model){

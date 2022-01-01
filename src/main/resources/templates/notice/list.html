@@ -68,7 +68,7 @@
                 <th>조회수</th>
             </tr>
             <tr th:each="dto:${list}">
-                <td style="width:50px" th:text="${dto.num}"></td>
+                <td style="width:50px"><a th:href="@{/read.do(num=${dto.num},nowPage=${nowPage})}" th:text="${dto.num}"> </a></td>
                 <td style="width:150px" th:text="${dto.id}">  </td>
                 <td ><a  th:href="@{/read.do(num=${dto.num},nowPage=${nowPage})}" th:text="${dto.subject}"> </a></td>
                 <td th:text="${dto.content}"></td>
