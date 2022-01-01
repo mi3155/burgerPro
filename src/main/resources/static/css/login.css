@@ -1,0 +1,58 @@
+* {
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(182, 174, 172);
+}
+
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.login-form h1 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.txtb {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    background: #ffffff28;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: black;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.login-btn {
+    width: 120px;
+    background: red;
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn2 {
+    width: 120px;
+    background: green;
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}

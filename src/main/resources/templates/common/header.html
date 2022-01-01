@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header class="header" id="header2">
+    <div class ="headArea">
+        <strong class="hLogo" id="hLogo2">
+            <a id="logo" href="/burger"><img src="img/macdonald.png" alt="맥도날드"></a>
+        </strong>
+        <nav id = "header-nav">
+            <div class = "Menu" id="Menu2">
+                <ul class = "header-ul" id="depth1" >
+                    <li class = "header-li"><a class="hla" id="hla2" >Menu</a>
+                        <ul class="lower-menu">
+                            <li><a href="#">버거</a></li>
+                            <li><a href="#">맥런치</a></li>
+                            <li><a href="#">맥모닝</a></li>
+                            <li><a href="#">해피 스낵</a></li>
+                            <li><a href="#">사이드 & 디저트</a></li>
+                            <li><a href="#">맥카페 & 음료</a></li>
+                            <li><a href="#">해피밀</a></li>
+                        </ul>
+                    </li>
+                    <li class = "header-li"><a class="hla" id = "hla3">Store</a>
+                        <ul class="lower-menu">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">맥딜리버리</a></li>
+                            <li><a href="#">맥드라이브</a></li>
+                            <li><a href="#">임차문의</a></li>
+                        </ul>
+                    </li>
+                    <li class = "header-li"><a class="hla" id = "hla4">What`s New</a>
+                        <ul class="lower-menu">
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">새로운 소식</a></li>
+                            <li><a href="#">이달의 해피밀</a></li>
+                        </ul>
+                    </li>
+                    <li class = "header-li"><a class="hla" id = "hla5">Story</a>
+                        <ul class="lower-menu">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">사회적 책임과 지원</a></li>
+                            <li><a href="#">맥도날드 경쟁력</a></li>
+                            <li><a href="#">맥도날드 사람들</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form id = "commonSearchForm" method ="post">
+                <div id ="util">
+                    <a href ="login" id ="check1">로그인</a>
+                    <a href ="list.do"  id ="check2">게시판</a>
+                    <a href ="#"  id ="check3">ENG</a>
+                    <div id="topSearch">
+                        <button type="button" class = "srch" onclick="search()" >검색 열기</button>
+                        <fieldset class="srchField" id="srchField1">
+                            <legend>통합검색</legend>
+                            <div class = "form">
+                                <input type="text" name = "commonSearchWord" id = "commonSearchWord" placeholder = "매장 또는 메뉴정보를 검색하실 수 있습니다." title = "검색어 입력">
+                                <button type = "button" class = "btnMC" >검색하기</button>
+                            </div>
+                            <button type="button" class="close" onclick="close33()">검색 닫기</button>
+                        </fieldset>
+                        <div id="dimmed"></div>
+                    </div>
+                </div>
+
+            </form>
+        </nav>
+    </div>
+</header>
+</body>
+</html>

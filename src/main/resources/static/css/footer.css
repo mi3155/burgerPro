@@ -1,0 +1,124 @@
+/* footer */
+.wrapper footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+
+}
+.footer{
+    width:100%;
+    height:257px;    
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    background: #292929;
+}
+
+.footer-1{
+    height:100%;
+    width: 1168px;
+    margin : 0px auto;
+    padding: 45px 0 55px;
+    text-align: left;
+}
+
+.footer-1ul{
+    color: #fff;
+    text-align: left;
+    float: left;
+    width: 190px;
+}
+
+.footer-1ul li{
+    margin-top : 5px;
+}
+.footer-1 a{
+    text-decoration: none;
+}
+
+.footer-3ul li{
+    margin-top : 5px;
+}
+
+.footer-2ul{
+    float:right;
+    
+}
+
+.footer-2ul a{
+    display:block;
+    overflow:hidden;
+}
+
+.footer-2ul li{
+    float: left;
+    margin-left: 20px;
+
+}
+
+.footer-3ul{
+    margin:0px;
+}
+
+.footer-div{
+    left:190px;
+    float: left;
+    opacity: .6;
+    font-weight:400;
+}
+.fb{
+    background-position: 0 0;
+    display : block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background:url(../img/facebook.png)0 0 no-repeat;
+}
+
+.ig{
+    display : block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background:url(../img/facebook.png)0 0 no-repeat;
+    background-position: 0 -40px;
+}
+
+.yt{
+    display : block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background:url(../img/facebook.png)0 0 no-repeat;
+    background-position: 0 -80px;
+}
+
+.ks{
+    display : block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background:url(../img/facebook.png)0 0 no-repeat;
+    background-position: 0 -120px;
+}
+
+.si{
+    display:block;
+    width: 100px;
+    height: 66px;
+    text-indent: 0;
+    background: none;
+}
+
+.si a img{
+    width: 100%;
+}
+
+.si a {
+    width:100px;
+    height:66px;
+    text-indent:0;
+    background:none;
+}
