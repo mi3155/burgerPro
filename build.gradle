@@ -13,20 +13,7 @@ repositories {
 }
 
 
-plugins {
-	id 'org.springframework.boot' version '2.3.3.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-}
-
-
 dependencies {
-
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
-	implementation 'org.springframework.session:spring-session-data-redis'
-
-	implementation 'nz.not.ultraq.thymeleaf:thymeleaf-layout-dialect'
-
-	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	//MYSQL 추가
 	implementation 'mysql:mysql-connector-java'
