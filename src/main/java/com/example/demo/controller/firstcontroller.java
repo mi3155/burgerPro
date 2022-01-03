@@ -87,10 +87,14 @@ public class firstcontroller {
         return "notice/post.html";}
 
 
-    @PostMapping("/postproc.do")
-    public String PostProcPage(noticeDTO dto, Model model){
+    @PostMapping("/postproc.do")  // 인자값에 Model model이 있었는데 필요없는거같아서 뺌
+    public String PostProcPage(noticeDTO dto,Authentication authentication){
+
+        UserDetails userDetails = (UserDetails)  authentication.getPrincipal();
+        dto.setId(userDetails.getUsername());
+
         NoticeService.postfunc(dto);
-        model.addAttribute("dto", dto);
+       // model.addAttribute("dto", dto);
         return "redirect:/list.do";
     }
 
