@@ -12,7 +12,9 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.jdbc.datasource.init.ScriptUtils;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,8 +41,13 @@ public class firstcontroller {
     }
 
     @GetMapping("/loginburger") // 메인페이지( 로그인 후 )
-    public String hello2(){
-        return "02burger.html";
+    public String hello2(Authentication authentication,Model model){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "loginburger.html";
     }
 
     @GetMapping("/login") // 로그인 창
@@ -71,7 +78,14 @@ public class firstcontroller {
     //notice
 
     @GetMapping("/post.do")
-    public String PostPage(){ return "notice/post.html";}
+    public String PostPage(Authentication authentication,Model model){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "notice/post.html";}
+
 
     @PostMapping("/postproc.do")
     public String PostProcPage(noticeDTO dto, Model model){
@@ -81,7 +95,12 @@ public class firstcontroller {
     }
 
     @GetMapping("/list.do")
-    public String ListPage(PageDTO dto, Model model){
+    public String ListPage(PageDTO dto, Model model,Authentication authentication){
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
 
         int nowPage=1; //기본 페이지
 
@@ -118,7 +137,13 @@ public class firstcontroller {
 
 
     @GetMapping("/read.do")
-    public String ReadPage(HttpServletRequest req, Model model){
+    public String ReadPage(HttpServletRequest req, Model model, Authentication authentication){
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
         System.out.println("NUM : " + req.getParameter("num"));
 
         //현재페이지 값 저장
@@ -138,7 +163,6 @@ public class firstcontroller {
 
         //세션에 읽고있는 게시물 넣기
         session.setAttribute("notice", notice);
-        session.setAttribute("notice", notice);
         session.setAttribute("nowPage",nowPage);
 
         //모델에 추가(페이지로 전달)
@@ -149,7 +173,13 @@ public class firstcontroller {
     }
 
     @PostMapping("/isupdate.do")
-    public String isupdate(noticeDTO dto,Model model){
+    public String isupdate(noticeDTO dto,Model model, Authentication authentication){
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
         model.addAttribute("dto",dto);
         return "notice/isupdate.html";
     }
@@ -179,7 +209,13 @@ public class firstcontroller {
     }
 
     @GetMapping("/isdelete.do")
-    public String isdeletepage(){
+    public String isdeletepage(Authentication authentication,Model model){
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
         return "notice/isdelete.html";
     }
     @PostMapping("/delete.do")
