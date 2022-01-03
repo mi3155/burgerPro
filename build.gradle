@@ -18,7 +18,7 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-security:2.6.2'
 
-	implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '2.4.1'
+	implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '1.8'
 
 
 	//MYSQL 추가
