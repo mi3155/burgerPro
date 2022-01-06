@@ -11,6 +11,8 @@ var hla2 = document.getElementById("hla2");
 var hla3 = document.getElementById("hla3");
 var hla4 = document.getElementById("hla4");
 var hla5 = document.getElementById("hla5");
+var welcome = document.getElementById("welcome");
+
 
 var curpos = document.documentElement.scrollTop; //스크롤 상단값 curpos에 대입
 var depth1 = document.getElementById("demth1");
@@ -18,6 +20,7 @@ var depth1 = document.getElementById("demth1");
 if(curpos>140){
     header2.style = "position:fixed;height:81px;z-index:12"
     hLogo2.style = "top:18px"
+
     himg2.style = "height:45px"
     hMenu2.style = "padding:22px 0"
     hla2.style = "line-height:80px;bottom:25px"
@@ -25,7 +28,8 @@ if(curpos>140){
     hla4.style = "line-height:80px;bottom:25px"
     hla5.style = "line-height:80px;bottom:25px"
     Menu2.style = "height:80px"
-    
+    welcome.style = "visibility : hidden"
+
 }  else{
     header2.style = ";"
     hLogo2.style =  ";"
@@ -36,6 +40,7 @@ if(curpos>140){
     hla3.style = ";"
     hla4.style = ";"
     hla5.style = ";"
+    welcome.style=";"
 
 }
 

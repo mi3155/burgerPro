@@ -42,7 +42,7 @@ public class config extends WebSecurityConfigurerAdapter{
                 //.anyRequest().authenticated(); // 어떤주소를 입력해도 login으로 넘어감
         http.formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/loginburger"); //로그인후 기본적으로 나올 페이지
+                .defaultSuccessUrl("/loginmain"); //로그인후 기본적으로 나올 페이지
         http.logout()
                         .logoutSuccessUrl("/burger")
                                 .invalidateHttpSession(true);

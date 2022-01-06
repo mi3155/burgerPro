@@ -35,9 +35,35 @@ public class firstcontroller {
     final private NoticeServiceImp NoticeService;
 
     @GetMapping("/burger") // 메인페이지 ( 로그인 전)
-    public String hello(){
+    public String burger(){
 
         return "01burger.html";
+    }
+
+    @GetMapping("/main")
+    public String main(){
+        return "main.html";
+    }
+
+    @GetMapping("/loginmain")
+    public String loginmain(Authentication authentication,Model model){
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "loginmain.html";
+    }
+
+    @GetMapping("/promotion")
+    public String Promotion(){
+        return "promotion.html";
+    }
+
+    @GetMapping("/macDelivery")
+    public String Delivery(){
+        return "macDelivery.html";
     }
 
     @GetMapping("/loginburger") // 메인페이지( 로그인 후 )

@@ -8,14 +8,14 @@
 <header class="header" id="header2">
     <div class ="headArea">
         <strong class="hLogo" id="hLogo2">
-            <a id="logo" href="/loginburger"><img src="img/macdonald.png" alt="맥도날드"></a>
+            <a id="logo" href="/loginburger"><img id ="himg2" src="img/macdonald.png" alt="맥도날드"></a>
         </strong>
         <nav id = "header-nav">
             <div class = "Menu" id="Menu2">
                 <ul class = "header-ul" id="depth1" >
                     <li class = "header-li"><a class="hla" id="hla2" >Menu</a>
                         <ul class="lower-menu">
-                            <li><a href="#">버거</a></li>
+                            <li><a href="/burger">버거</a></li>
                             <li><a href="#">맥런치</a></li>
                             <li><a href="#">맥모닝</a></li>
                             <li><a href="#">해피 스낵</a></li>
@@ -67,7 +67,7 @@
                         </fieldset>
                         <div id="dimmed"></div>
                     </div>
-                    <br><span th:text="${login.Username}" ></span> 님 환영합니다!
+                    <br><a id ="welcome"><span  th:text="${login.Username}" ></span> 님 환영합니다! </a>
                     <!doctype html>
 
                     <html lang="en">

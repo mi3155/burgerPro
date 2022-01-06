@@ -115,7 +115,10 @@
             <a class="button" href="/post.do">글쓰기</a>
             <a class="button" th:href="@{/list.do(nowPage=1)}">처음으로</a>
         </div>
-
+        <div class = "aside" id = "aside2">
+            <a href="#" class ="goDelivery" id ="goDelivery2" title="새창 열림">Mcdelivery</a>
+        </div>
+        <button type="button" id = "btnTop" onclick="window.scrollTo(0, 0);">맨 위로 가기</button>
 
     </div>
 
@@ -131,8 +134,6 @@
 <!-- 스크롤 이동시, 헤더부분과 오른쪽 이미지부분-->
 <script src="js/01scroll-fix.js"></script>
 
-<!-- 아래 + 버튼 부분 -->
-<script src="js/02button+.js"></script>
 <!-- header- search 부분 -->
 <script src="js/03search.js"></script>
 </html>
