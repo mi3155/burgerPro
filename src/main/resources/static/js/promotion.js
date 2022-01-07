@@ -11,7 +11,7 @@ let ccnt = 0;
 
 function moreClick(e){
     e.preventDefault();
-    // console.log(ccnt)
+     //console.log(ccnt)
 
 
 //allbtn on

@@ -15,10 +15,10 @@ caption{/* overflow:hidden; */margin-left:-9999px;width:1px;height:1px;font-size
 label{cursor:pointer}
 
 #container {width: 100%;}
-.content .contArea{padding: 30px 0 60px;}
-.content .contArea.bgG{background:#fbfbfb}
-.content .contArea>:first-child{margin-top:0!important}
-.content .contArea>.inner{position:static!important;}
+ .contArea{padding: 30px 0 60px;}
+ .contArea.bgG{background:#fbfbfb}
+ .contArea>:first-child{margin-top:0!important}
+ .contArea>.inner{position:static!important;}
 .inner {position: relative;width: 1168px;margin: 0 auto;}
 .visualArea{display:flex;position:relative;min-height: 220px;padding: 10px 0;color:#292929;text-align:left;}
 .visualArea .inner{display:flex;flex-direction:column;justify-content:center;height: 200px;margin:auto;padding-bottom: 15px;}
