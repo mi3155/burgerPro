@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,14 +8,14 @@
 <header class="header" id="header2">
     <div class ="headArea">
         <strong class="hLogo" id="hLogo2">
-            <a id="logo" href="/loginburger"><img id ="himg2" src="img/macdonald.png" alt="맥도날드"></a>
+            <a id="logo" href="/loginmain"><img id ="himg2" src="img/macdonald.png" alt="맥도날드"></a>
         </strong>
         <nav id = "header-nav">
             <div class = "Menu" id="Menu2">
                 <ul class = "header-ul" id="depth1" >
                     <li class = "header-li"><a class="hla" id="hla2" >Menu</a>
                         <ul class="lower-menu">
-                            <li><a href="/burger">버거</a></li>
+                            <li><a class = "solid" href="/loginburger">버거</a></li>
                             <li><a href="#">맥런치</a></li>
                             <li><a href="#">맥모닝</a></li>
                             <li><a href="#">해피 스낵</a></li>
@@ -27,14 +27,14 @@
                     <li class = "header-li"><a class="hla" id = "hla3">Store</a>
                         <ul class="lower-menu">
                             <li><a href="#">매장찾기</a></li>
-                            <li><a href="#">맥딜리버리</a></li>
+                            <li><a class = "solid" href="/loginDelivery">맥딜리버리</a></li>
                             <li><a href="#">맥드라이브</a></li>
                             <li><a href="#">임차문의</a></li>
                         </ul>
                     </li>
                     <li class = "header-li"><a class="hla" id = "hla4">What`s New</a>
                         <ul class="lower-menu">
-                            <li><a href="#">프로모션</a></li>
+                            <li><a class = "solid" href="/loginPromotion">프로모션</a></li>
                             <li><a href="#">새로운 소식</a></li>
                             <li><a href="#">이달의 해피밀</a></li>
                         </ul>
@@ -49,6 +49,8 @@
                     </li>
                 </ul>
             </div>
+<!--              로그인 후 -->
+            <sec:authorize access="isAuthenticated()" >
             <form id = "commonSearchForm" method ="post">
                 <div id ="util">
                     <a href ="logout" id ="check1">로그아웃</a>
@@ -67,23 +69,14 @@
                         </fieldset>
                         <div id="dimmed"></div>
                     </div>
-                    <br><a id ="welcome"><span  th:text="${login.Username}" ></span> 님 환영합니다! </a>
-                    <!doctype html>
 
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <meta name="viewport"
-                              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-                        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                        <title>Document</title>
-                    </head>
-                    <body>
-                    
-                    </body>
-                    </html>
+
+                    <br><a id ="welcome"><span  th:text="${login.Username}" ></span> 님 환영합니다! </a>
+
+
                 </div>
             </form>
+            </sec:authorize>
         </nav>
     </div>
 </header>

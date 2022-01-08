@@ -45,6 +45,7 @@ public class firstcontroller {
         return "main.html";
     }
 
+//    로그인 홈페이지 시작
     @GetMapping("/loginmain")
     public String loginmain(Authentication authentication,Model model){
 
@@ -53,8 +54,39 @@ public class firstcontroller {
 
         model.addAttribute("login", userDetails);
 
-        return "loginmain.html";
+        return "login/loginmain.html";
     }
+
+    @GetMapping("/loginburger") // 메인페이지( 로그인 후 )
+    public String hello2(Authentication authentication,Model model){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "login/loginburger.html";
+    }
+
+    @GetMapping("/loginDelivery") // 메인페이지( 로그인 후 )
+    public String hello44(Authentication authentication,Model model){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "login/loginDelivery.html";
+    }
+
+    @GetMapping("/loginPromotion") // 메인페이지( 로그인 후 )
+    public String hello55(Authentication authentication,Model model){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        //System.out.println("안녕하세요 " + userDetails.getUsername());
+
+        model.addAttribute("login", userDetails);
+
+        return "login/loginPromotion.html";
+    }
+//    로그인 홈페이지 끝
 
     @GetMapping("/promotion")
     public String Promotion(){
@@ -66,15 +98,7 @@ public class firstcontroller {
         return "macDelivery.html";
     }
 
-    @GetMapping("/loginburger") // 메인페이지( 로그인 후 )
-    public String hello2(Authentication authentication,Model model){
-        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        //System.out.println("안녕하세요 " + userDetails.getUsername());
 
-        model.addAttribute("login", userDetails);
-
-        return "loginburger.html";
-    }
 
     @GetMapping("/login") // 로그인 창
     public String hello3(){
