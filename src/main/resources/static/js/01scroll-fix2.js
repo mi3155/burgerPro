@@ -28,6 +28,7 @@ if(curpos>140){
     hla4.style = "line-height:80px;bottom:25px"
     hla5.style = "line-height:80px;bottom:25px"
     Menu2.style = "height:80px"
+    welcome.style = "visibility : hidden"
 
 }  else{
     header2.style = ";"
@@ -39,6 +40,7 @@ if(curpos>140){
     hla3.style = ";"
     hla4.style = ";"
     hla5.style = ";"
+    welcome.style=";"
 
 }
 
