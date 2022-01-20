@@ -26,6 +26,7 @@
 
 <!-- main sector -->
 <div class="main">
+  <button type="button" class="ctrl prev">이전</button>
   <div class="main-banner">
     <ul>
       <li><img src="img/main/banner1.png" alt="1920x540"></li>
@@ -36,6 +37,15 @@
 <!--      <li><img src="img/main/banner6.png" alt="1920x540"></li>-->
 <!--      <li><img src="img/main/banner7.png" alt="1920x540"></li>-->
     </ul>
+  </div>
+  <button type="button" class="ctrl next">다음</button>
+  <div class="indicator">
+    <span class ="timer">
+<!--  style="width: 10%; overflow: hidden;"    -->
+      <span class = "bar" id="bar"  ></span>
+    </span>
+<!--    다시 클릭하면 재생 버튼이 뜨게끔 -->
+    <button type="button" id = "play" class="play pause">정지</button>
   </div>
 </div>
 <!--  main sector end-->
@@ -250,5 +260,6 @@
 <script src="js/03search.js"></script>
 <script src="js/main.js"></script>
 
+<script src="js/05btwidth.js"></script>
 
 </html>
