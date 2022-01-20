@@ -1,0 +1,413 @@
+
+/* Area - header */
+.area{
+    width:100%;
+    line-height: 1.9;
+    margin: 0;
+
+}
+.bmac{
+
+    width:100%;
+    height:40%;
+    background: url(../img/background/macd.jpg) 50% 50% no-repeat;
+    background-color : gray;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    min-height: 220px;
+    padding: 10px 0;
+    color: #292929;
+    text-align: left;
+
+}
+
+.bmacinner{
+    position: relative;
+    width: 1168px;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 15px;
+    height: 200px;
+    top:30px;
+}
+
+
+
+#hh1{
+
+    display: block;
+    color: #292929;
+    font-size: 50px;
+    display: block;
+    line-height: 1;
+    color: inherit;
+    font-weight:bold;
+}
+.bmacP{
+    font-family: SpeedeeK, Malgun Gothic,'ë§‘ì€ ê³ ë”•', Dotum,'ë‹ì›€', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #292929;
+    text-align: left;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 34px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.bmacinner{
+    height: 170px;
+    margin: 60px auto 0;
+    Color : #ffffff;
+}
+.bmacinner ul{
+    display : flex;
+    padding: 0px;
+    margin-top : 50px;
+    Color : #ffffff;
+
+}
+
+.bmacinner>ul>li>a{
+    font-size : 16px;
+    font-weight:bold;
+}
+
+.dot:before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 14px 0 10px;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: #f5bd43;
+}
+
+/* Area-헤더 부분 */
+
+
+/* -- */
+.contArea{
+    margin: 0;
+    padding: 30px 0 60px;
+    height:1036px;
+}
+
+.inner{
+    padding: 0;
+    width: 1168px;
+    margin: 0 auto;
+    margin-top: 0!important;
+    position: static!important;
+}
+
+.titDep2{
+    display: block;
+    color:#292929;
+    margin : 0 0 30px;
+    font-size: 30px;
+    line-height:1;
+    font-weight:500;
+    font-family: SpeedeeK, Malgun Gothic,'맑은 고딕', Dotum,'돋움', Arial, sans-serif;
+}
+
+.deliverySrch{
+    margin-top: 40px;
+}
+
+.deliverySrch .sBox{
+    float: left;
+    width: 564px;
+    height: 406px;
+    padding: 40px 30px 50px;
+    border-radius: 40px;
+    background: #f8f8f8;
+}
+
+legend{
+    display: block;
+    width :0;
+    height: 0;
+    text-indent: -9000px;
+    overflow: hidden';
+}
+
+.deliverySrch .sBox .frwWrap{
+    position: relative
+}
+
+
+.deliverySrch .sBox .frwWrap span{
+    display: inline-block;
+    width:100%
+}
+
+.deliverySrch .sBox .frm .addr1{
+    width: 100%;
+}
+
+.deliverySrch .sBox .frwWrap span input{
+    padding-right:180px;
+}
+
+#sppan{
+    display: inline-block;
+    width:100%;
+    height:70px;
+}
+
+input[type='text']{
+    color: #292929;
+    height: 70px;
+    padding: 0 28px;
+    line-height: 1;
+    border: 1px solid #d1d1d1;
+    border-radius: 70px;
+    background: #fff;
+}
+
+.deliverySrch .sBox .frwWrap button{
+    position : absolute;
+    right:0;
+    top : 0;
+    min-width:160px;
+}
+
+.btnM{
+    min-width: 172px;
+    padding : 0 38px;
+    font-size: 15px;
+    line-height: 70px;
+    border-radius:70px;
+}
+
+.btnMC{
+    display: inline-block;
+    color: #292929;
+    font-weight:600;
+    background: #ffbc0d;
+}
+
+.frm{
+    margin-top : 12px;
+}
+
+.addr2{
+    width: 220px;
+}
+
+.addr3{
+    width: 100px;
+    margin-left: 7px;
+}
+
+.unit{
+    display: inline-block;
+    margin-left:7px;
+    color:#292929;
+}
+
+.deliverySrch .sBox .txt{
+    margin-top: 25px;
+    text-align:center;
+}
+
+.btn1{
+    margin-top:40px;
+    text-align:center;
+}
+
+/* 필드셋 끝 */
+
+.deliverySrch .rBox{
+    position : relative;
+    float: right;
+    width: 554px;
+    height: 406px;
+    padding: 50px;
+    color: #000;
+    text-align: center;
+    border-radius: 40px;
+    background:#fff;
+    border: 6px solid #bd0017;
+}
+
+.deliverySrch .rBox::before{
+    content: '';
+    position: absolute;
+    top:50px;
+    left:-33px;
+    width: 7px;
+    height: 11px;
+    margin: 137px 0 0 0;
+    background:url(../img/comma.png) 0 0 no-repeat;
+}
+
+.deliverySrch .rBox .default{
+    text-align: center;
+}
+
+.deliverySrch .rBox .default:before{
+    background: url(../img/McDelivery.png) 0 0 no-repeat;
+    background-size : cover;
+}
+
+.deliverySrch .rBox p:before{
+    content: '';
+    display: block;
+    width: 259px;
+    height: 266px;
+}
+
+.deliverySrch .rBox .default strong{
+    display:inline-block;
+    border-bottom : 1px solid #000;
+}
+
+.deliverySrch .rBox p strong{
+    padding-top: 10px;
+    position : relative;
+    font-weight: 600;
+    left:50px;
+    top:10px;
+}
+
+.deliverySrch .rBox p{
+    position:relative;
+    text-align: left;
+    margin:0px;
+}
+
+.deliverySrch .rBox .result{
+    padding-top : 40px;
+}
+
+.deliverySrch:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+/* 주소검색 app 끝 */
+
+.listDep1{
+    margin-top : 40px;
+}
+
+.listDep1>li:first-child{
+    margin-top: 0;
+}
+
+.listDep1>li{
+    margin-top : 6px;
+    padding-left: 16px;
+}
+
+.listDep1>li:before{
+    content: '';
+    display: inline-block;
+    width:6px;
+    height:6px;
+    margin: -2px 10px 0 -16px;
+    vertical-align:middle;
+    border-radius:100%;
+    background: #ffbb0a;
+}
+
+.btnArea{
+    margin-top:100px;
+    text-align: center;
+}
+
+.mcdelivery > *{
+    display: inline-block;
+    vertical-align:top;
+}
+
+.btnMC.action{
+    color:#fff;
+    background:#da0000;
+}
+
+.btnArea .btnMC{
+    margin : 0 12px;
+}
+
+.btnL{
+    min-width: 200px;
+    padding:0 50px;
+    font-size: 18px;
+    line-height: 90px;
+    border-radius:90px;
+}
+
+.app_store > div{
+    display: inline-block;
+}
+
+.str1{
+    left: 20px;
+    top: 10px;
+}
+/* --------------------------------- */
+.menuList:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btnMore{
+    margin-top: 60px;
+    text-align:center;
+}
+
+.btnMore .more {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    vertical-align: top;
+    text-indent: -9999px;
+    background: url(../img/+button.png) 0 0 no-repeat;
+    border:0;
+}
+
+
+
+.aside{
+    position:fixed;
+    bottom: 110px;
+    left:49%;
+    margin: 0 0 0 635px;
+    z-index:10;
+}
+
+.aside .goDelivery {
+        display: block;
+        width: 110px;
+        height: 113px;
+        overflow: hidden;
+        text-indent: -9999px;
+        background: url(../img/McDelivery.png) 0 0 no-repeat;
+        background-size: cover;
+    }
+
+#btnTop{
+    position: fixed;
+    bottom: 45px;
+    left: 50%;
+    width: 43px;
+    height: 40px;
+    margin: 0 0 0 635px;
+    background: url(../img/top.png) 0 14px no-repeat;
+    text-indent: -9999px;
+    font-size: 1px;
+    z-index: 10;
+    border:0;
+}
