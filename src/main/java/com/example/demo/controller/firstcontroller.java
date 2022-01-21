@@ -34,6 +34,8 @@ public class firstcontroller {
     final private BurgerServiceImp service;
     final private NoticeServiceImp NoticeService;
 
+
+
     @GetMapping("/burger") // 메인페이지 ( 로그인 전)
     public String burger(){
 
