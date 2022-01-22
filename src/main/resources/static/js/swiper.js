@@ -1,3 +1,5 @@
+
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
 
@@ -10,7 +12,19 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  autoplay: { delay: 4000,
+  autoplay: {
+    delay: 4000,
    },
+
+
+    on: {
+         slideChange : function (){
+
+         var bar = document.querySelector("#bar");
+
+            bar.style= "background-color : pink;";
+        }
+
+}
 
 });
