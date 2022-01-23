@@ -58,16 +58,21 @@ h2{
 }
 
 .bar{
-     animation-name : moving;
-     animation-duration : 4s;
-     animation-iteration-count : 1;
+    width:0%;
+
  }
+
 
  @keyframes moving
  {
      0%{width: 0%;}
      100%{width: 100%;}
  }
+  @keyframes init
+  {
+      0%{width: 100%;}
+      100%{width: 0%;}
+  }
 
 
 .swiper {
