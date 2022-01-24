@@ -47,6 +47,11 @@ public class config extends WebSecurityConfigurerAdapter{
         http.logout()
                         .logoutSuccessUrl("/main")
                                 .invalidateHttpSession(true);
-            http.csrf().disable();
+            http.csrf().disable()
+                    //접근이 실패했을 경우
+                    .exceptionHandling().accessDeniedPage("/accessfailed");
+
     }
 }
+
+

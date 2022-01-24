@@ -304,4 +304,8 @@ public class firstcontroller {
             return "redirect:/login.html";
     }
 
+    @GetMapping("/accessfailed")
+    public String accessfailed(){
+        return "login/accessfailed.html";
+    }
 }
