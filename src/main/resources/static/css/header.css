@@ -80,7 +80,7 @@ strong{
     position: relative;
     top: 28px;
     float: left;
-    z-index: 2;
+    z-index: 4;
     
 }
 .Menu{
@@ -141,6 +141,7 @@ strong{
 #header-nav:hover .Menu{
     height:500px;
     border-bottom : 1px solid orange;
+    z-index : 2;
 }
 
 
