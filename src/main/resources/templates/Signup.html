@@ -5,7 +5,7 @@
     <title>Title</title>
 
     <link rel="stylesheet" type="text/css" href="css/Signup.css">
-
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
 </head>
 <body>
@@ -23,7 +23,8 @@
     </tr>
     <tr>
         <td>주소</td>
-        <td><input class="tete" type="text" name = "address" placeholder="상세주소"></td>
+        <td><input type="text" class="addr1 tete" id = "addr1" name = "address" placeholder="주소를 선택해주세요." ></td>
+        <td><button type="button" class="btnMC btnM" onclick="openApiPost()" title="주소찾기 새창림">주소찾기</button></td>
     </tr>
     <tr>
         <td>휴대폰</td>
@@ -38,6 +39,10 @@
     </tr>
 </table>
     </form>
+
 </div>
 </body>
+
+<script src="js/04jusoSearch.js"></script>
+
 </html>

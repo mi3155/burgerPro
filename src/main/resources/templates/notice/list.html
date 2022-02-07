@@ -62,15 +62,13 @@
                 <th>번호</th>
                 <th> ID </th>
                 <th>제목</th>
-                <th>내용</th>
                 <th>등록날짜</th>
                 <th>조회수</th>
             </tr>
             <tr th:each="dto:${list}">
                 <td style="width:50px"><a th:href="@{/read.do(num=${dto.num},nowPage=${nowPage})}" th:text="${dto.num}"> </a></td>
                 <td style="width:150px" th:text="${dto.id}">  </td>
-                <td ><a  th:href="@{/read.do(num=${dto.num},nowPage=${nowPage})}" th:text="${dto.subject}"> </a></td>
-                <td th:text="${dto.content}"></td>
+                <td style="width:200px"><a  th:href="@{/read.do(num=${dto.num},nowPage=${nowPage})}" th:text="${dto.subject}"> </a></td>
                 <td style="width:200px" th:text="${dto.regdate}"></td>
                 <td style="width:100px" th:text="${dto.count}"></td>
             </tr>
