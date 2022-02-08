@@ -126,27 +126,24 @@ public class firstcontroller {
         return "login";
     }
 
-    ///////////////////////////////////////////
     //notice
 
     @GetMapping("/post.do")
     public String PostPage(Authentication authentication,Model model){
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        //System.out.println("안녕하세요 " + userDetails.getUsername());
 
         model.addAttribute("login", userDetails);
 
         return "notice/post.html";}
 
 
-    @PostMapping("/postproc.do")  // 인자값에 Model model이 있었는데 필요없는거같아서 뺌
+    @PostMapping("/postproc.do")
     public String PostProcPage(noticeDTO dto,Authentication authentication){
 
         UserDetails userDetails = (UserDetails)  authentication.getPrincipal();
         dto.setId(userDetails.getUsername());
 
         NoticeService.postfunc(dto);
-       // model.addAttribute("dto", dto);
         return "redirect:/list.do";
     }
 
@@ -154,8 +151,6 @@ public class firstcontroller {
     public String ListPage(PageDTO dto, Model model,Authentication authentication){
 
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        //System.out.println("안녕하세요 " + userDetails.getUsername());
-
         model.addAttribute("login", userDetails);
 
         int nowPage=1; //기본 페이지

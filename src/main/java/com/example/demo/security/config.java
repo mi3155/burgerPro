@@ -28,9 +28,6 @@ public class config extends WebSecurityConfigurerAdapter{
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
         auth.userDetailsService(service).passwordEncoder(passwordencoder());
-//        auth.inMemoryAuthentication().withUser("user1")
-//                .password("$2a$10$vy81zDvf1InasWNOSiOYbeY6JLE3zSGz2jC.hgh6wNEwj9B/sgtl6")
-//                .roles("USER");
     }
 
     @Override
@@ -39,7 +36,6 @@ public class config extends WebSecurityConfigurerAdapter{
                 .antMatchers("/burger").permitAll()
                 .antMatchers("/list.do").hasRole("USER")
                 .antMatchers("/post.do").hasRole("ADMIN");
-                //.anyRequest().authenticated(); // 어떤주소를 입력해도 login으로 넘어감
         http.formLogin()
 
                 .loginPage("/login")

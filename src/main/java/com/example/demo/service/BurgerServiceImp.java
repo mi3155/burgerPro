@@ -43,15 +43,6 @@ public class BurgerServiceImp implements BurgerService, UserDetailsService {
     public Burger save(SignupDTO dto){
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         dto.setPassword(encoder.encode(dto.getPassword()));
-
-        //DTO -> Entity
-//        Burger burger = Burger.builder()
-//                        .id(dto.getId())
-//                                .auth(dto.getAuth())
-//                                        .password(dto.getPassword())
-//                                                .address(dto.getAddress())
-//                                                        .phone(dto.getPhone())
-//                                                                .build();
         Burger burger = dtoToEntity(dto);
         Burgerrepo.save(burger);
 
